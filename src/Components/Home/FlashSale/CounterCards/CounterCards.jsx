@@ -79,11 +79,11 @@ export default function CounterCards() {
       <div className="btn-left-right-counter">
         <div className="btn1-arrow-left" onClick={() => handleScroll("left")}>
          
-          <span style={{ fontSize: "20px" }}> <i className="fa-solid fa-arrow-left"></i></span>
+          <span style={{ fontSize: "20px" }}> <i className="fa-solid fa-arrow-left" style={{color:"black"}}></i></span>
         </div>
         <div className="btn1-arrow-left" onClick={() => handleScroll("right")}>
          
-          <span style={{ fontSize: "20px" }}> <i className="fa-solid fa-arrow-right"></i></span>
+          <span style={{ fontSize: "20px" }}> <i className="fa-solid fa-arrow-right" style={{color:"black"}}></i></span>
         </div>
       </div>
 

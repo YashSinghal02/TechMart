@@ -12,7 +12,7 @@ function FlashSale() {
 
       <div className="flash-sale">
         <div className="flash-sale-txt">
-            <h2>Flash Sale</h2>
+            <h2 style={{color:"black"}}>Flash Sale</h2>
         </div>
         <div className="flash-sale-counter">
        

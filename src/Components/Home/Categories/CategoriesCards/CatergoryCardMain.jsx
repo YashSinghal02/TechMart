@@ -38,8 +38,8 @@ function CatergoryCardMain() {
       <div
         className="
           grid 
-          grid-cols-1
-          sm:grid-cols-2
+          grid-cols-2
+          sm:grid-cols-3
           md:grid-cols-3
           [@media(min-width:992px)]:grid-cols-6
           gap-6 
