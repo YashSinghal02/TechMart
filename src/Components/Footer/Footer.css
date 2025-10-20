@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+.footer-container {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  padding: 50px  30px;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+}
+
+
+.footer-section h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+
+.footer-exclusive h3 {
+  color: #ffffff;
+}
+
+.subscribe-text {
+  font-weight: 550;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.discount-text {
+  color: #b3b3b3;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.email-input-wrapper {
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.email-input-wrapper input {
+  width: 100%;
+  padding: 12px 45px 12px 16px;
+  background: transparent;
+  border: 1.5px solid #ffffff;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.email-input-wrapper input::placeholder {
+  color: #808080;
+}
+
+.email-submit-btn {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #00a2e7;
+  cursor: pointer;
+}
+
+.footer-support p,
+.footer-links a {
+  color: #b3b3b3;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00a2e7;
+}
+
+
+
+.save-text {
+  color: #b3b3b3;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.app-download-box {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.qr-code {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-store-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.app-store-buttons a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  background: transparent;
+  border: 1.5px solid #fff;
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+.app-store-buttons a:hover {
+  background: #00a2e7;
+  border-color: #00a2e7;
+}
+
+.store-name {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00a2e7;
+}
+
+.footer-copyright {
+  border-top: 1px solid #333;
+  text-align: center;
+  padding-top: 25px;
+  margin-top: 50px;
+}
+
+.footer-copyright p {
+  color: #808080;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+}
+.ios-width{
+    width: 30px;
+}
+
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-section {
+    width: 45%;
+  }
+
+  .footer-exclusive,
+  .footer-download {
+    max-width: 300px;
+  }
+
+  .app-download-box {
+    justify-content: flex-start;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .footer-content {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    text-align: left;
+  }
+
+  .footer-section {
+    flex: 1;
+    max-width: 22%;
+  }
+
+  .footer-exclusive {
+    max-width: 25%;
+  }
+
+  .footer-download {
+    max-width: 25%;
+  }
+
+  .app-download-box {
+    justify-content: flex-start;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+  }
+  /* .ios-width{
+    width: 20px;
+  }
+  .store-name{
+    font-size: 10px;
+  } */
+}

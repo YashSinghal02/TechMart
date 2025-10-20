@@ -1,0 +1,146 @@
+
+.layout-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 25px;
+  justify-content: center;
+}
+
+
+.right-column-newarrival {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.bottom-row {
+  display: flex;
+  gap: 20px;
+}
+
+.card-newarrival {
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 14px;
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card-newarrival:hover {
+  
+}
+
+.content-newarrival h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.content-newarrival p {
+  font-size: 13px;
+  opacity: 0.85;
+  margin-bottom: 8px;
+}
+
+.content-newarrival button {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.content-newarrival button:hover {
+  background: #fff;
+  color: #000;
+}
+
+
+.large {
+  flex: 2;
+  height: 450px;
+}
+
+.medium {
+  height: 210px;
+}
+
+.small {
+  flex: 1;
+  height: 210px;
+}
+
+
+.ps5 {
+  background-image: url("../../../assets/ps5slim.png");
+   background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.iphone {
+  background-image: url("../../../assets/air.png");
+   background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.speakers {
+  background-image: url("../../../assets/alexa.png");
+   background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.camera {
+  background-image: url("../../../assets/sony2.png");
+  background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+@media (max-width: 991px) {
+  .layout-container {
+    flex-direction: column;
+  }
+
+  .bottom-row {
+    flex-direction: row;
+  }
+
+  .large {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bottom-row {
+    flex-direction: column;
+  }
+
+  .large,
+  .medium,
+  .small {
+    height: 300px;
+  }
+
+  .content-newarrival h2 {
+    font-size: 1rem;
+  }
+
+  .content-newarrival p {
+    font-size: 0.85rem;
+  }
+}

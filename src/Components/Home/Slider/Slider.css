@@ -1,0 +1,64 @@
+.carousel img {
+  width: 100%;
+  object-fit: cover;
+  height: 23vh; 
+}
+@media (min-width: 450px) {
+  .carousel img {
+    height: 26vh;
+  }
+}
+
+@media (min-width: 500px) {
+  .carousel img {
+    height: 30vh;
+  }
+}
+@media (min-width: 550px) {
+  .carousel img {
+    height: 32vh;
+  }
+}
+
+@media (min-width: 600px) {
+  .carousel img {
+    height: 35vh;
+  }
+}
+
+@media (min-width: 650px) {
+  .carousel img {
+    height: 37vh;
+  }
+}
+
+@media (min-width: 750px) {
+  .carousel img {
+    height: 42vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel img {
+    height: 45vh;
+  }
+}
+
+@media (min-width: 800px) {
+  .carousel img {
+    height: 47vh;
+  }
+}
+
+@media (min-width: 860px) {
+  .carousel img {
+    height: 50vh;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .carousel img {
+    height: 60vh;
+  }
+}

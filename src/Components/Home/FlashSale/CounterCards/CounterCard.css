@@ -1,0 +1,221 @@
+ .cards-container::-webkit-scrollbar {
+          display: none;
+        }
+
+        .pc-card {
+          min-width: 280px;
+          background: white;
+          border-radius: 10px;
+          overflow: hidden;
+          font-family: "Poppins", sans-serif;
+          transition: all 0.3s ease;
+          flex-shrink: 0;
+        }
+
+        .pc-img-wrap {
+          position: relative;
+          background: #fafafa;
+          width: 350px;
+          height: 180px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .pc-img {
+          width: 50%;
+          height: auto;
+          object-fit: contain;
+          transition: transform 0.3s ease;
+        }
+
+        .pc-card:hover .pc-img {
+          transform: scale(1.05);
+        }
+
+        .pc-badge {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          background: #ff4d4f;
+          color: #fff;
+          font-size: 13px;
+          font-weight: 600;
+          padding: 4px 8px;
+          border-radius: 6px;
+          z-index: 2;
+        }
+
+        .pc-actions {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+
+        .pc-icon {
+          width: 34px;
+          height: 34px;
+          border-radius: 50%;
+          background: #fff;
+          border: 1px solid #eee;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.2s ease;
+        }
+
+        .pc-icon svg {
+          width: 18px;
+          height: 18px;
+          color: #333;
+        }
+
+        .pc-icon:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .pc-body {
+          padding: 12px 14px 16px;
+          text-align: left;
+        }
+
+        .pc-title {
+          font-size: 14px;
+          font-weight: 600;
+          color: #333;
+          margin-bottom: 8px;
+          line-height: 1.3;
+        }
+
+        .pc-price-row {
+          display: flex;
+          align-items: baseline;
+          gap: 8px;
+          margin-bottom: 8px;
+        }
+
+        .pc-price {
+          color: #ff4d4f;
+          font-weight: 700;
+          font-size: 16px;
+        }
+
+        .pc-cut del {
+          color: #888;
+          font-size: 13px;
+        }
+
+        .pc-rating-row {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+
+        .pc-stars {
+          display: flex;
+          align-items: center;
+        }
+
+        .pc-stars svg {
+          width: 14px;
+          height: 14px;
+          color: #f7b500;
+        }
+
+        .pc-rating-count {
+          font-size: 13px;
+          color: #888;
+        }
+
+        .Order-now {
+          position: absolute;
+          inset: 0;
+          background-color: rgba(255, 255, 255, 0.07);
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          box-sizing: border-box;
+        }
+
+        .pc-card:hover .Order-now {
+          opacity: 1;
+          cursor: pointer;
+        }
+
+        .buy {
+          background: #000;
+          color: #fff;
+          border: none;
+          padding: 10px;
+          font-size: 16px;
+          font-weight: 500;
+          width: 100%;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          opacity: 0;
+          transform: translateY(1px);
+        }
+
+        .pc-card:hover .buy {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        .buy:hover {
+          background: #000000d8;
+          transform: translateY(-2px);
+        }
+
+        .btn-left-right-counter {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          margin-top: 20px;
+        }
+
+        .btn1-arrow-left {
+          border: 2px solid black;
+          border-radius: 50%;
+          padding: 10px;
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.3s linear;
+        }
+
+        .btn1-arrow-left:hover {
+          background: #000;
+          color: #fff;
+          transform: scale(1.1);
+        }
+
+        .btn1-arrow-left:active {
+          transform: scale(0.95);
+        }
+
+        @media (min-width: 768px) {
+          .cards-container {
+            gap: 20px;
+          }
+        }
+
+        @media (min-width: 1024px) {
+          .cards-container {
+            gap: 24px;
+          }
+        }

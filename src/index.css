@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Paragraphs */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+/* Heading */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+:root {
+          --color-primary: #00A2E7;
+          --color-bg: #ffffff;
+          --color-text: #1A1A1A;
+          --color-border: #E5E7EB;
+        }
+
+h1,h2,h3,h4,h5,h6,div {
+  font-family: 'Poppins', sans-serif;
+}
+
+p,div {
+  font-family: 'Inter', sans-serif;
+}

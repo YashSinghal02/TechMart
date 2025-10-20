@@ -1,0 +1,252 @@
+.grab-deal {
+  margin-top: 50px;
+  padding: 0 60px;
+  width: 100%;
+}
+
+.grab-deal h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 6px;
+}
+
+.grab-blue {
+  color: var(--color-primary);
+}
+
+.grab-line {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #eaeaea; 
+}
+
+.inner-grab-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 2px;
+  background-color: var(--color-primary);
+  border-radius: 2px;
+}
+
+       
+       
+       .deal-card1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 280px;
+  height: 370px;
+  border-radius: 8px;
+  border: 2px solid #e4e4e4;
+  background-color: #fff;
+  overflow: hidden;
+  color: var(--color-text);
+  transition: all 0.3s ease;
+  margin: 50px auto ;
+}
+
+.deal-card1:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.deal-card-img {
+  width: 100%;
+  height: 65%;
+  background-color: #f5f5f5;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deal-card-img img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.heart-badge {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: #ffffff;
+    width: 30px;
+    height: 30px;
+    padding-top: 2px;
+    border-radius: 50%;
+    text-align: center;
+    text-align: center;
+    border: 2px solid #e4e4e4;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.heart-badge:hover{
+  
+  opacity: .8;
+  transform: scale(.8);
+}
+
+/* Heart icon styles */
+.fa-heart {
+  font-size: 16px;
+  color: #666;
+  transition: all 0.2s linear;
+}
+
+.fa-heart-color {
+  color: red !important;
+}
+
+.heart-badge:active {
+  transform: scale(1.1);
+}
+.sale-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--color-primary);
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    width: 55px;
+    height: 55px;
+    padding-top: 6px;
+    text-align: center;
+    border: 2px solid var(--color-primary);
+}
+
+.sale-badge p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.deal-card-txt {
+    padding: 10px;
+  background-color: #fff;
+  width: 100%;
+  text-align: start;
+  padding-top: 6px;
+  
+}
+
+.deal-card-txt h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 6px 0;
+   font-family: 'Inter', sans-serif !important;
+  
+}
+
+.deal-card-txt h5 {
+   font-family: 'Inter', sans-serif !important;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 4px 0;
+}
+
+.cut-price-sale {
+  font-weight: 500;
+  color: #777;
+  margin-left: 4px;
+}
+
+.save-line {
+  border-top: 2px solid #ededed;
+  margin-top: 6px;
+  padding-top: 4px;
+}
+
+.save-line h5 {
+  color: #249b3e;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Hover Overlay */
+.Order-now {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.07);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box;
+  /* padding: 10px; */
+}
+
+.deal-card1:hover .Order-now {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.buy {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(1px);
+}
+
+.deal-card1:hover .buy {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.buy:hover {
+  background: #000000d8;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 600px) {
+    .grab-deal h2{
+        font-size: 26px;
+    }
+  .inner-grab-line {
+    width: 490px;
+  }
+}
+
+@media (min-width: 700px) {
+    .grab-deal h2{
+        font-size: 31px;
+    }
+  .inner-grab-line {
+    width: 490px;
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+.deal-card1{
+  width: 250px;
+  height: 300px;
+}
+
+}
+
+@media only screen and (min-width: 1280px) {
+.deal-card1{
+  width: 290px;
+  height: 350px;
+}
+
+}
+
+
