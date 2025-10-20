@@ -35,8 +35,8 @@ function FormSign() {
         <div className="form-area">
           
           <h2 className="form-title">Tech <span style={{color:"#00a2e7"}}>Mart</span></h2>
-          <h2 className="text-center font-semibold text-xl" >Create an Account</h2>
-          <div className="cross-icon" onClick={goHome}>
+          <h2 className="text-center font-semibold text-xl"  style={{color:"black"}}>Create an Account</h2>
+          <div className="cross-icon" onClick={goHome} style={{color:"black"}}>
             <i class="fa-solid fa-xmark"></i>
           </div>
           <form onSubmit={handleSubmit(onSubmit)}>
