@@ -199,9 +199,8 @@
         }
 
         .btn1-arrow-left:hover {
-          background: #000;
-          color: #fff;
-          transform: scale(1.1);
+          background: transparent;
+          transform: scale(1.01);
         }
 
         .btn1-arrow-left:active {

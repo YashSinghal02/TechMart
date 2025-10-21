@@ -1,0 +1,218 @@
+.testimonial-main {
+  margin-top: 50px;
+  padding: 40px 20px;
+}
+
+/* Container */
+.carousel-container2 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Carousel Wrapper */
+.carousel-wrapper2 {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* Track */
+.carousel-track2 {
+  display: flex;
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Page - Contains 3 cards */
+.carousel-page2 {
+  flex: 0 0 100%;
+  display: flex;
+  gap: 16px;
+  padding: 0 4px;
+}
+
+/* Individual Card */
+.carousel-card2 {
+  flex: 1;
+  min-height: 220px;
+  /* padding: 24px 24px; */
+  border-radius: 20px;
+  /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); */
+}
+
+/* Card Content */
+.card-content2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Left Section */
+.card-left2 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+}
+
+/* Brand Tag */
+.brand-tag2 {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Brand Info */
+.brand-info2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Logo Circle */
+.logo-circle2 {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Logo Icon */
+.logo-icon2 {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Offer Text */
+.offer-text2 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Right Section */
+.card-right2 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+
+/* Product Image */
+.product-image2 {
+  /* width: 160px;
+  height: 160px; */
+  padding: 0 24px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.25));
+}
+
+/* Dots Container */
+.dots-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+/* Dot */
+.dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: #d0d0d0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Active Dot */
+.dot-active {
+  background: #2196f3;
+  width: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-page2 {
+    flex-direction: column;
+  }
+
+  .carousel-card2 {
+    min-height: 180px;
+  }
+
+  .product-image2 {
+    /* width: 120px;
+    height: 120px; */
+     width: 230px;
+        height: auto;
+        object-fit: cover;
+  }
+
+  .logo-circle2 {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-icon2 {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* @media (max-width:564px) {
+  .product-image2 {
+    width: 200px;
+        height: 200px;
+        object-fit: cover;
+  }
+} */
+
+@media (max-width: 480px) {
+  .carousel-container2 {
+    padding: 0 12px;
+  }
+
+  .carousel-card {
+    padding: 16px;
+    min-height: 160px;
+  }
+
+  .product-image2 {
+    width: 230px;
+        height: auto;
+        object-fit: cover;
+    /* width: 100px;
+    height: 100px; */
+  }
+
+  .brand-tag2 {
+    font-size: 9px;
+    padding: 4px 10px;
+  }
+
+  .offer-text2 {
+    font-size: 12px;
+  }
+}
+
+/* @media (min-width: 600px) {
+    .grab-deal2 h2{
+        font-size: 30px;
+    }
+  .inner-grab-line2 {
+    width: 345px;
+  }
+} */

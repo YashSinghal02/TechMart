@@ -139,7 +139,7 @@
           transition: color 0.3s;
           display: flex;
           align-items: center;
-          gap: 6px;
+          /* gap: 6px; */
         }
 
         .nav-right a:hover {
@@ -346,7 +346,7 @@
   
         @media (min-width: 992px) {
           .navbar {
-            padding: 16px 60px;
+            padding: 16px 25px;
             gap: 25px;
           }
 

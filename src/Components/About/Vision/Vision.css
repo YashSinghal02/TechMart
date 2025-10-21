@@ -1,0 +1,170 @@
+/* ====== Vision Section ====== */
+.vision-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 20px;
+  background-color: #ffffff;
+  color: #111;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ====== Left Section ====== */
+.vision-txt-left {
+  text-align: center;
+  max-width: 600px;
+}
+
+.vision-txt-left h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.vision-txt-left h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.vision-img {
+  width: 100%;
+  /* max-width: 380px; */
+  margin: 0 auto;
+}
+
+.vision-img img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+
+.vision-txt-right {
+  max-width: 700px;
+}
+
+.vision-txt-right h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.vision-txt-right p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.why-choose h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #000000;
+}
+
+.why-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 10px;
+}
+
+.why-li {
+  font-size: 16px;
+  color: #222;
+  position: relative;
+  padding-left: 20px;
+}
+
+.why-ul .why-li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #00a2e7;
+  font-size: 20px;
+  line-height: 1;
+}
+
+
+@media (min-width: 768px) {
+  .vision-main {
+    padding: 70px 40px;
+  }
+
+  .vision-txt-left h2 {
+    font-size: 32px;
+  }
+
+  .vision-txt-left h3 {
+    font-size: 19px;
+  }
+
+  .vision-txt-right h2 {
+    font-size: 34px;
+  }
+
+  .why-choose h3 {
+    font-size: 26px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .vision-main {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 60px;
+    gap: 60px;
+  }
+
+  .vision-txt-left {
+    flex: 1.1;
+    text-align: left;
+  }
+
+  .vision-txt-right {
+    flex: 1.1;
+  }
+
+  .vision-img {
+    /* max-width: 400px; */
+  }
+
+  .vision-txt-left h2 {
+    font-size: 36px;
+  }
+
+  .vision-txt-right h2 {
+    font-size: 38px;
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .vision-main {
+    padding: 100px 100px;
+    gap: 80px;
+  }
+
+  .vision-txt-left h2 {
+    font-size: 42px;
+  }
+
+  .vision-txt-right h2 {
+    font-size: 42px;
+  }
+
+  .vision-txt-right p {
+    font-size: 17px;
+  }
+}
