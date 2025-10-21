@@ -32,8 +32,10 @@
           justify-content: space-between;
           padding: 14px 20px;
           width: 100%;
+          position: fixed;
+          top: 0;
           background: var(--color-bg);
-          position: relative;
+          /* position: relative; */
           z-index: 100;
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         }
@@ -99,6 +101,7 @@
         }
 
         .search-bar input {
+          color: black;
           width: 200px;
           padding: 8px 36px 8px 12px;
           border-radius: 8px;

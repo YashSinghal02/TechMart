@@ -6,7 +6,7 @@ import cmf from "../../../assets/cmf-accordion.webp";
 
 function Slider() {
   return (
-    <div className="carousel w-full">
+    <div className="carousel w-full" style={{marginTop:"75px"}}>
       <div id="slide1" className="carousel-item relative w-full">
         <img src={heroimg} alt="Hero" />
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">

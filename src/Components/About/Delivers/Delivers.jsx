@@ -9,7 +9,7 @@ function Delivers() {
           <FaTruck />
         </div>
         <h3>FREE AND FAST DELIVERY</h3>
-        <p>Free delivery for all orders over $140</p>
+        <p>Free delivery for all orders above ₹200</p>
       </div>
 
       <div className="feature-card">

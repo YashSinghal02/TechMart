@@ -58,6 +58,7 @@
 /* Text */
 .info-box h4,
 .info-box p {
+  color: black;
   margin-bottom: 0;
   transition: color 0.3s;
 }
