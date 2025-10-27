@@ -5,21 +5,21 @@
   export let Salescontent = [
     {
       name: "Galaxy S24 Ultra",
-      price: "₹74999",
+      price: 74999,
       cutprice:"₹₹124999",
       save:"₹49999",
       pictureLink:s22,
     },
        {
          name: "Galaxy M13 (4GB | 64 GB )",
-      price: "₹14999",
+      price:14999,
       cutprice:"₹10499",
       save:"₹3999",
       pictureLink:m13,
     },
        {
          name: "Galaxy M33 (4GB | 64 GB )",
-      price: "₹16999",
+      price: 16999,
       cutprice:"₹24999",
       save:"₹8000",
       pictureLink:m33,
@@ -27,7 +27,7 @@
 
       {
          name: "Galaxy S24 ",
-      price: "₹49999",
+      price: 49999,
       cutprice:"₹85999",
       save:"₹36000",
       pictureLink:s22fe,

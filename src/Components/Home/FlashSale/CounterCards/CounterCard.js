@@ -5,7 +5,7 @@
   export let CounterCard = [
     {
       name: "Ant Esports GP400 Gamepad ",
-      price: "₹1,799",
+      price: 1799,
       cutprice:"₹4,999",
       save:"₹49999",
       rating:"2.5k",
@@ -14,7 +14,7 @@
     },
        {
          name: "Redragon K673 PRO 75% ",
-      price: "₹4,502",
+      price: 4502,
       cutprice:" ₹5,990",
       save:"₹3999",
        rating:"1k",
@@ -23,7 +23,7 @@
     },
        {
          name: "ViewSonic Gaming Monitor",
-      price: " ₹26,199",
+      price: 26199,
       cutprice:" ₹34,900",
       save:"₹8000",
        rating:"800",
@@ -33,7 +33,7 @@
 
       {
          name: "Sony ULT Wear WH-ULT900 Headphones ",
-      price: "  ₹12,999",
+      price: 12999,
       cutprice:" ₹24,990",
       save:"₹36000",
       off:"48%",
@@ -44,7 +44,7 @@
 
        {
          name: "Sony Cinema Line FX30B Camera ",
-      price: "  ₹1,62,989",
+      price: 162989,
       cutprice:"  ₹1,79,990",
       save:"₹17000",
       off:"9%",
@@ -55,7 +55,7 @@
 
        {
          name: "Apple Watch Series 10",
-      price: "  ₹45,999",
+      price:  45999,
       cutprice:" ₹49,900",
       save:"₹4999",
       off:"5%",

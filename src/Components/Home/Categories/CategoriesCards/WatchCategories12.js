@@ -5,7 +5,7 @@
   export let WatchCategories12 = [
     {
       name: "Google Pixel Watch 2 ",
-      price: "₹17,999",
+      price: 17999,
       cutprice:"  ₹33,900",
       save:"₹5999",
       off:"5%",
@@ -13,7 +13,7 @@
     },
        {
          name: "Samsung Galaxy Watch8 ",
-      price: "₹33,900",
+      price: 33900,
       cutprice:"  ₹37,999",
       save:"₹2999",
        off:"3%",
@@ -21,7 +21,7 @@
     },
        {
     name: "Apple Watch Series 10",
-      price: "₹79,900",
+      price: 79900,
       cutprice:" ₹84,900",
       save:"₹7999",
       off:"8%",
@@ -30,7 +30,7 @@
 
       {
          name: "OnePlus Watch 2",
-      price: " ₹12,999",
+      price: 12999,
       cutprice:"  ₹27,999",
       save:"₹9000",
        off:"10%",

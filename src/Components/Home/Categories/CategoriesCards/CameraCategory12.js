@@ -5,7 +5,7 @@
   export let CameraCategor = [
     {
       name: "Sony Alpha ILCE-7M3K ",
-      price: "₹1,33,290",
+      price: 133290,
       cutprice:"₹1,61,490",
       save:"₹27999",
       off:"18%",
@@ -13,7 +13,7 @@
     },
        {
          name: "Nikon Digital Camera",
-      price: "₹1,02,899",
+      price: 102899,
       cutprice:" ₹1,15,795",
       save:"₹12999",
        off:"8%",
@@ -21,7 +21,7 @@
     },
        {
          name: "Canon EOS R7 32.5MP",
-      price: "₹1,64,990",
+      price: 164990,
       cutprice:"₹1,75,995",
       save:"₹8000",
        off:"8%",
@@ -30,7 +30,7 @@
 
       {
          name: "Sony Alpha ILCE-7RM5 ",
-      price: " ₹2,82,990",
+      price:282990,
       cutprice:"₹3,53,990",
       save:"₹47000",
        off:"25%",

@@ -5,7 +5,7 @@
   export let GameCategory12 = [
     {
       name: "Sony PlayStation®5 Digital Edition",
-      price: " ₹42,990",
+      price: 42990,
       cutprice:"  ₹49,990",
       save:"₹5999",
       off:"5%",
@@ -13,7 +13,7 @@
     },
        {
          name: "Nintendo Switch 2",
-      price: " ₹53,440",
+      price: 53440,
       cutprice:"   ₹79,990",
       save:"₹7999",
        off:"8%",
@@ -21,7 +21,7 @@
     },
        {
     name: "Sony DualSense Wireless ",
-      price: " ₹5,549",
+      price:  5549,
       cutprice:"   ₹6,390",
       save:" ₹3999",
       off:"4%",
@@ -30,7 +30,7 @@
 
       {
          name: "Microsoft Xbox Series S",
-      price: " ₹31,980",
+      price: 31980,
       cutprice:" ₹39,990",
       save:"₹6999",
        off:"6%",

@@ -5,7 +5,7 @@
   export let MoblieCategory = [
     {
       name: "iphone 15",
-      price: "₹55999",
+      price: 55999,
       cutprice:"₹79999",
       save:"₹24999",
       off:"31%",
@@ -13,7 +13,7 @@
     },
        {
          name: "Samsung Galaxy S25 Ultra",
-      price: "₹1,23,499",
+      price: 123499,
       cutprice:"1,29,999",
       save:"₹5999",
        off:"5%",
@@ -21,7 +21,7 @@
     },
        {
          name: "Vivo X200",
-      price: "₹94,999",
+      price: 94999,
       cutprice:"₹1,01,999",
       save:"₹8000",
        off:"8%",
@@ -30,7 +30,7 @@
 
       {
          name: "oneplus 13s ",
-      price: "₹50,999.00",
+      price: 50999,
       cutprice:"₹57,999",
       save:"₹7000",
        off:"6%",

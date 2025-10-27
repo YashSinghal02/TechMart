@@ -1,8 +1,26 @@
 import { useState } from "react";
 import { Link } from 'react-router'
 import "./NavBar.css"
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router";
+
 
 function NavBar() {
+  // Reducx logic
+  const items = useSelector((state) => 
+    {return state.cart.items} )
+  console.log(items)
+
+
+  // Reducx logic
+
+  // MOve to Cart
+  const navigate = useNavigate();
+    // Navigate home
+  const goCart = () => navigate("/Cart");
+  // MOver to cart
+
+
   const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
   
   const toggleHamburgerMenu = () => {
@@ -41,9 +59,10 @@ function NavBar() {
           <div className="nav-right">
             <Link to="/form" className="signin"> <i className="fa-regular fa-user"></i>SignIn/Up</Link>
             <span className="divider">|</span>
-            <a href="#" className="cart">
+            <a href="#" className="cart" onClick={goCart} >
               <i className="fa-solid fa-cart-shopping"></i>
-              Cart
+              Cart 
+              <span className="itemsadd">{items.length}</span>
             </a>
           </div>
 

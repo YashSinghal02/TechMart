@@ -1,7 +1,12 @@
 import { CameraCategor } from "./CameraCategory12";
 import "./CategoriesCrdMain.css";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../../CartSlice/CartSlice";
+
+
 
 function Camera() {
+    const dispatch=useDispatch()
   return (
     <div>
       <div className="px-4">
@@ -22,7 +27,7 @@ function Camera() {
                 <div className="deal-card-txt">
                   <h3>{x.name}</h3>
                   <h5>
-                    {x.price}{" "}
+                    ₹{x.price}{" "}
                     <span className="cut-price-sale">
                       <del>{x.cutprice}</del>
                     </span>
@@ -33,7 +38,14 @@ function Camera() {
                 </div>
 
                 <div className="Order-now">
-                  <button className="buy">Add To Cart</button>
+                  <button
+                   onClick={()=>dispatch(addToCart({
+                                     productid: x.id,
+                                    name:x.name,
+                                    price:x.price,
+                                    img:x.pictureLink,
+                                  }))}
+                  className="buy">Add To Cart</button>
                 </div>
               </div>
             );

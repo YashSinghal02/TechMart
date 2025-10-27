@@ -3,10 +3,15 @@ import { FiHeart, FiEye } from "react-icons/fi";
 import { AiFillStar } from "react-icons/ai";
 import { CounterCard } from "./CounterCard";
 import "./CounterCard.css"
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../../CartSlice/CartSlice";
 
 
 
 export default function CounterCards() {
+  // redux
+    const dispatch=useDispatch()
+    // redux
   const scrollContainerRef = useRef(null);
 
   const handleScroll = (direction) => {
@@ -51,14 +56,20 @@ export default function CounterCards() {
                 </button>
               </div>
               <div className="Order-now">
-                <button className="buy">Add To Cart</button>
+                <button 
+                 onClick={()=>dispatch(addToCart({
+                   productid: x.id,
+                  name:x.name,
+                  price:x.price,
+                  img:x.pictureLink,
+                }))}className="buy">Add To Cart</button>
               </div>
             </div>
 
             <div className="pc-body">
               <h3 className="pc-title">{x.name}</h3>
               <div className="pc-price-row">
-                <div className="pc-price">{x.price}</div>
+                <div className="pc-price">₹{x.price}</div>
                 <div className="pc-cut">
                   <del>{x.cutprice}</del>
                 </div>
