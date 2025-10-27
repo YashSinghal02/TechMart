@@ -2,7 +2,9 @@ import React from "react";
 import "./Cart.css";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
+import { clearCart } from "../CartSlice/CartSlice";
 // import { removeCart } from "../counterSlice/cartSlice";
+
 
 function Cart() {
   const dispatch = useDispatch();
@@ -16,6 +18,13 @@ function Cart() {
   const totalPrice = items.reduce((acc, item) => {
     return acc + Number(item.price) ;
   }, 0);
+
+  // Final Pay
+   const handleCheckout = () => {
+    dispatch(clearCart());
+    alert("Order placed successfully!");
+    navigate("/");
+  };
 
   // Navigate home
   const goHome = () => navigate("/");
@@ -56,7 +65,7 @@ function Cart() {
         <button className="return-btn" onClick={goHome}>
           Return To Shop
         </button>
-        <button className="update-btn">Update Cart</button>
+        <button className="update-btn" onClick={goHome}>Update Cart</button>
       </div>
 
       {/* Coupon + Totals */}
@@ -77,7 +86,7 @@ function Cart() {
           <p className="total">
             <span>Total:</span> <span>₹{totalPrice}</span>
           </p>
-          <button className="checkout-btn" onClick={goHome}>Proceed to Checkout</button>
+          <button className="checkout-btn" onClick={handleCheckout}>Proceed to Checkout</button>
         </div>
       </div>
     </div>
