@@ -121,7 +121,7 @@
   cursor: pointer;
 }
 
-.removecart {
+/* .removecart {
   background-color: #00a2e7;
   padding: 10px;
   border-radius: 6px;
@@ -135,8 +135,40 @@
   cursor: pointer;
   opacity: 0.8;
   transform: scale(0.9);
+} */
+ .removecart{
+  display: flex;
+align-items: center;
+justify-content: center;
+gap: 5px;
+}
+.plus{
+    background-color: #00a2e7;
+   color: white;
+  border-radius: 50%;
+  background: #00a2e7;
+  height: 21px;
+  font-size: 12px;
+  width: 21px;
+  /* padding: 2px 5px 1px  5px; */
+  text-align: center;
+    display: flex;
+align-items: center;
+justify-content: center;
+  transition: all 0.3s linear;
+
+}
+.plus:hover{
+cursor: pointer;
+opacity: 0.8;
+transform: scale(0.9);
 }
 
+.plus:active{
+cursor: pointer;
+opacity: 1;
+transform: scale(0.8);
+}
 /* ---------------- Responsive ---------------- */
 @media (max-width: 600px) {
   /* Adjust layout */

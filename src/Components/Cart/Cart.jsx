@@ -52,7 +52,11 @@ function Cart() {
               <span>{item.name}</span>
             </div>
             <span>₹{item.price}</span>
-            <button className="removecart">Remove{item.quantity }</button>
+            <span className="removecart">
+              <div className="plus"><i class="fa-solid fa-plus"></i></div>
+              <div className="quantitynumber">1</div>
+              <div className="plus"><i class="fa-solid fa-minus"></i></div>
+            </span>
             <span>₹{Number(item.price)}</span>
           </div>
         ))

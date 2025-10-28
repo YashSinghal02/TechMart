@@ -56,6 +56,7 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
+
 .deal-card-img {
   width: 100%;
   height: 65%;
@@ -213,6 +214,14 @@
   background: #000000d8;
   transform: translateY(-2px);
 }
+/* .deal-card1:active .buy {
+  opacity: 1 ;
+  transform: translateY(2) !important;
+} */
+/* .buy:active {
+  background: #000000d8;
+  transform: translateY(-10px) !important;
+} */
 
 @media (min-width: 600px) {
     .grab-deal h2{

@@ -37,10 +37,29 @@ function NavBar() {
             <h1>Tech<span>Mart</span></h1>
           </div>
 
+
+{/* Crat */}
+
+       {/* <div> 
+          <a href="#" className="cart" onClick={goCart} >
+              <i className="fa-solid fa-cart-shopping"></i>
+              Cart 
+              <span className="itemsadd">{items.length}</span>
+            </a>
+          </div> */}
+
           {/* Hamburger Icon (Mobile Only) */}
-          <div className="bar" onClick={toggleHamburgerMenu}>
-            <i className="fa-solid fa-bars"></i>
+          <div className="bar" >
+            <a href="#" className="cart" onClick={goCart} >
+              <i className="fa-solid fa-cart-shopping"></i>
+              Cart 
+              <span className="itemsadd">{items.length}</span>
+            </a>
+            <i onClick={toggleHamburgerMenu} className="fa-solid fa-bars"></i>
+            
           </div>
+
+         
 
           {/* Navigation Links (Desktop) */}
           <ul className="nav-links">
@@ -79,9 +98,10 @@ function NavBar() {
             <li><Link to="/about" onClick={toggleHamburgerMenu}>About</Link></li>
             <li><Link to="/contact" onClick={toggleHamburgerMenu}>Contact</Link></li>
             <li><Link to="/form" onClick={toggleHamburgerMenu} className="signin " style={{color:"white"}}><i className="fa-regular fa-user"></i>SignIn/Up</Link></li>
-            <li><a href="#" onClick={toggleHamburgerMenu} className="cart" style={{color:"white"}}>
-             <i className="fa-solid fa-cart-shopping"></i>
+            <li><a href="#" onClick={()=>{  toggleHamburgerMenu(); goCart()}} className="cart" style={{color:"white"}}>
+             <i onClick={goCart}  className="fa-solid fa-cart-shopping"></i>
               Cart
+              <span className="itemsadd">{items.length}</span>
             </a></li>
           </ul>
           
