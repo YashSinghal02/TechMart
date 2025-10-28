@@ -52,7 +52,7 @@ function NavBar() {
           <div className="bar" >
             <a href="#" className="cart" onClick={goCart} >
               <i className="fa-solid fa-cart-shopping"></i>
-              Cart 
+               
               <span className="itemsadd">{items.length}</span>
             </a>
             <i onClick={toggleHamburgerMenu} className="fa-solid fa-bars"></i>
