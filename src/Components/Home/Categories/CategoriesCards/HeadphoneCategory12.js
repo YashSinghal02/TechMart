@@ -3,7 +3,7 @@
   import sony1 from "../../../../assets/sonyhead.png";
    import sony2 from "../../../../assets/beatshead.png";
   export let HeadphoneCategory12 = [
-    {
+    { id:31,
       name: "Beats Studio Pro",
       price: 31990,
       cutprice:"  ₹37,900",
@@ -12,7 +12,8 @@
       pictureLink:sony2,
     },
        {
-         name: "Apple AirPods Headphones",
+         id:32,
+         name: "Apple Headphones",
       price: 49900,
       cutprice:"  ₹59,900",
       save:"₹9999",
@@ -20,7 +21,8 @@
       pictureLink:nikon,
     },
        {
-    name: "boAt 2025 Launch Rockerz 411",
+         id:33,
+    name: "boAt Rockerz 411",
       price:   7998,
       cutprice:"   ₹14,999",
       save:" ₹7999",
@@ -29,7 +31,8 @@
     },
 
       {
-         name: "Sony ULT Wear WH-ULT900N",
+         id:34,
+         name: "Sony ULT Wear",
       price: 12999,
       cutprice:" ₹24,990",
       save:"₹12999",

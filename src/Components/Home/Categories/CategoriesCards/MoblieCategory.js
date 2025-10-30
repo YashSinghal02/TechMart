@@ -3,7 +3,7 @@
       import samsung25 from "../../../../assets/samsung25.webp";
         import vivo200 from "../../../../assets/vivo200.png";
   export let MoblieCategory = [
-    {
+    {id:11,
       name: "iphone 15",
       price: 55999,
       cutprice:"₹79999",
@@ -12,6 +12,7 @@
       pictureLink:iphone152,
     },
        {
+        id:12,
          name: "Samsung Galaxy S25 Ultra",
       price: 123499,
       cutprice:"1,29,999",
@@ -20,6 +21,7 @@
       pictureLink:samsung25,
     },
        {
+        id:13,
          name: "Vivo X200",
       price: 94999,
       cutprice:"₹1,01,999",
@@ -29,6 +31,7 @@
     },
 
       {
+        id:14,
          name: "oneplus 13s ",
       price: 50999,
       cutprice:"₹57,999",

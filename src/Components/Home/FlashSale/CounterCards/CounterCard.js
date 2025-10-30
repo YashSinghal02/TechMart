@@ -4,7 +4,8 @@
         import headphone from "../../../../assets/headphone.webp";
   export let CounterCard = [
     {
-      name: "Ant Esports GP400 Gamepad ",
+      id:5,
+      name: "Ant Esports Gamepad ",
       price: 1799,
       cutprice:"₹4,999",
       save:"₹49999",
@@ -13,7 +14,8 @@
       pictureLink:gamehandle,
     },
        {
-         name: "Redragon K673 PRO 75% ",
+        id:6,
+         name: "Redragon K673 PRO",
       price: 4502,
       cutprice:" ₹5,990",
       save:"₹3999",
@@ -22,6 +24,7 @@
       pictureLink:keyboard,
     },
        {
+        id:7,
          name: "ViewSonic Gaming Monitor",
       price: 26199,
       cutprice:" ₹34,900",
@@ -32,7 +35,8 @@
     },
 
       {
-         name: "Sony ULT Wear WH-ULT900 Headphones ",
+        id:8,
+         name: "Sony ULT Wear ",
       price: 12999,
       cutprice:" ₹24,990",
       save:"₹36000",
@@ -43,7 +47,8 @@
 
 
        {
-         name: "Sony Cinema Line FX30B Camera ",
+        id:9,
+         name: "Sony Line FX30B Camera ",
       price: 162989,
       cutprice:"  ₹1,79,990",
       save:"₹17000",
@@ -54,6 +59,7 @@
     
 
        {
+        id:10,
          name: "Apple Watch Series 10",
       price:  45999,
       cutprice:" ₹49,900",

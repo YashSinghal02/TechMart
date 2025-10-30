@@ -3,9 +3,19 @@ import apple from "../../assets/apple.png";
 import Qr from "../../assets/Qr.png";
 import './Footer.css'
 import { Link } from "react-router";
+import { motion, useScroll, useMotionValueEvent, useTransform } from "framer-motion";
+
 
 
 function Footer() {
+ const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (val) => {
+    // console.log(val);
+   
+
+  });
+   const opacity = useTransform(scrollY, [0, 100], ["0", "1"]);
   return (
     <>
 
@@ -51,10 +61,10 @@ function Footer() {
           <div className="footer-section footer-links">
             <h3>Quick Link</h3>
             <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms Of Use</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><Link to="">Privacy Policy</Link></li>
+              <li><Link to="">Terms Of Use</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
 
@@ -102,6 +112,11 @@ function Footer() {
         <div className="footer-copyright">
           <p>&copy; Copyright Yash 2025. All right reserved</p>
         </div>
+        <motion.button className="downtotop"
+        style={{
+        opacity}}
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+          <i className="fa-solid fa-up-long"></i></motion.button>
       </footer>
     </>
   );

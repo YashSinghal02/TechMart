@@ -3,7 +3,7 @@
   import sony1 from "../../../../assets/onewatch.png";
    import sony2 from "../../../../assets/googlewatch.png";
   export let WatchCategories12 = [
-    {
+    {id:19,
       name: "Google Pixel Watch 2 ",
       price: 17999,
       cutprice:"  ₹33,900",
@@ -11,7 +11,7 @@
       off:"5%",
       pictureLink:sony2,
     },
-       {
+       {id:20,
          name: "Samsung Galaxy Watch8 ",
       price: 33900,
       cutprice:"  ₹37,999",
@@ -20,6 +20,7 @@
       pictureLink:nikon,
     },
        {
+        id:21,
     name: "Apple Watch Series 10",
       price: 79900,
       cutprice:" ₹84,900",
@@ -29,6 +30,7 @@
     },
 
       {
+        id:22,
          name: "OnePlus Watch 2",
       price: 12999,
       cutprice:"  ₹27,999",

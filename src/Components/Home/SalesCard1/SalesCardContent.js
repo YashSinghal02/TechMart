@@ -3,22 +3,23 @@
       import m33 from "../../../assets/m33.png";
         import s22fe from "../../../assets/s22fe.png";
   export let Salescontent = [
-    {
+    {id:1,
       name: "Galaxy S24 Ultra",
       price: 74999,
       cutprice:"₹₹124999",
       save:"₹49999",
       pictureLink:s22,
     },
-       {
-         name: "Galaxy M13 (4GB | 64 GB )",
+       {id:2,
+         name: "Galaxy M13",
       price:14999,
       cutprice:"₹10499",
       save:"₹3999",
       pictureLink:m13,
     },
        {
-         name: "Galaxy M33 (4GB | 64 GB )",
+        id:3,
+         name: "Galaxy M33",
       price: 16999,
       cutprice:"₹24999",
       save:"₹8000",
@@ -26,6 +27,7 @@
     },
 
       {
+        id:4,
          name: "Galaxy S24 ",
       price: 49999,
       cutprice:"₹85999",

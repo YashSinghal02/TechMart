@@ -3,15 +3,15 @@
   import sony1 from "../../../../assets/acermonitor.png";
    import sony2 from "../../../../assets/dellmonitor.png";
   export let MonitorCategory12 = [
-    {
-      name: "Dell SE2425HG 23.8 FHD IPS ",
+    {id:15,
+      name: "Dell SE2425HG ",
       price: 9999,
       cutprice:" ₹17,729",
       save:"₹5999",
       off:"8%",
       pictureLink:sony2,
     },
-       {
+       {id:16,
          name: "Samsung 27 Odyssey G5 ",
       price: 16599,
       cutprice:"  ₹33,800",
@@ -20,7 +20,8 @@
       pictureLink:nikon,
     },
        {
-         name: "LG Ultragear 24GS65F, 24 inch",
+        id:17,
+         name: "LG Ultragear 24GS65F",
       price: 9799,
       cutprice:"₹20,000",
       save:"₹8000",
@@ -29,7 +30,8 @@
     },
 
       {
-         name: "Acer Nitro Vg271U M3 27 Inch IPS",
+        id:18,
+         name: "Acer Nitro OLED",
       price: 14299,
       cutprice:" ₹23,999",
       save:"₹9000",

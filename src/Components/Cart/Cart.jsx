@@ -2,8 +2,7 @@ import React from "react";
 import "./Cart.css";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
-import { clearCart } from "../CartSlice/CartSlice";
-// import { removeCart } from "../counterSlice/cartSlice";
+import { clearCart,deleteQuantity,removeCart,addToCart } from "../CartSlice/CartSlice";
 
 
 function Cart() {
@@ -14,10 +13,16 @@ function Cart() {
   const items = useSelector((state) => state.cart.items);
   console.log("Cart Items:", items);
 
+
   // Calculate total price
   const totalPrice = items.reduce((acc, item) => {
     return acc + Number(item.price) ;
   }, 0);
+
+  // Price Qunatity
+const perPrice = items.reduce((acc, curr) => {
+  return acc + (Number(curr.price) * curr.quantity);  // ✅ Multiply by quantity
+}, 0);
 
   // Final Pay
    const handleCheckout = () => {
@@ -50,14 +55,35 @@ function Cart() {
             <div className="product">
               <img src={item.img} alt=""  width={60} height={60}/>
               <span>{item.name}</span>
+              <span
+              onClick={()=>dispatch(removeCart({
+                      productid: item.productid,
+                      name:item.name,
+                      price:item.price,
+                      }))}
+              className="delcart1"><i class="fa-solid fa-xmark delcart"></i></span>
             </div>
             <span>₹{item.price}</span>
             <span className="removecart">
-              <div className="plus"><i class="fa-solid fa-plus"></i></div>
-              <div className="quantitynumber">1</div>
-              <div className="plus"><i class="fa-solid fa-minus"></i></div>
+              <div className="plus"><i 
+              onClick={()=>dispatch(addToCart({
+                      productid: item.productid,
+                      name:item.name,
+                      price:item.price,
+                      }))}
+              class="fa-solid fa-plus"></i>
+              </div>
+              <div className="quantitynumber">{item.quantity}</div>
+              <div className="plus"><i 
+               onClick={()=>dispatch(deleteQuantity({
+                      productid: item.productid,
+                      name:item.name,
+                      price:item.price,
+                      }))}
+              class="fa-solid fa-minus"></i>
+              </div>
             </span>
-            <span>₹{Number(item.price)}</span>
+            <span>₹{item.price * item.quantity}</span>
           </div>
         ))
       ) : (
@@ -82,13 +108,13 @@ function Cart() {
         <div className="cart-total">
           <h2>Cart Total</h2>
           <p>
-            <span>Subtotal:</span> <span>₹{totalPrice}</span>
+            <span>Subtotal:</span> <span>₹{perPrice}</span>
           </p>
           <p>
             <span>Shipping:</span> <span>Free</span>
           </p>
           <p className="total">
-            <span>Total:</span> <span>₹{totalPrice}</span>
+            <span>Total:</span> <span>₹{perPrice}</span>
           </p>
           <button className="checkout-btn" onClick={handleCheckout}>Proceed to Checkout</button>
         </div>

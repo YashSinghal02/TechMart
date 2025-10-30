@@ -42,8 +42,8 @@ export default function CounterCards() {
         }}
         className="cards-container"
       >
-        {CounterCard.map((x, index) => (
-          <div className="pc-card" key={index}>
+        {CounterCard.map((x, id) => (
+          <div className="pc-card" key={id}>
             <div className="pc-img-wrap">
               <div className="pc-badge">-{x.off}</div>
               <img src={x.pictureLink} alt={x.name} className="pc-img" />
@@ -58,7 +58,7 @@ export default function CounterCards() {
               <div className="Order-now">
                 <button 
                  onClick={()=>dispatch(addToCart({
-                   productid: x.id,
+                   productid:x.id,
                   name:x.name,
                   price:x.price,
                   img:x.pictureLink,

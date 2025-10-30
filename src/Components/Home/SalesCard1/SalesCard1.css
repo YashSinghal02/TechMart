@@ -87,11 +87,12 @@
     border: 2px solid #e4e4e4;
     transition: all .3s linear;
     cursor: pointer;
+    z-index: 4;
 }
 .heart-badge:hover{
   
   opacity: .8;
-  transform: scale(.8);
+  transform: scale(.9);
 }
 
 /* Heart icon styles */
@@ -105,9 +106,7 @@
   color: red !important;
 }
 
-.heart-badge:active {
-  transform: scale(1.1);
-}
+
 .sale-badge {
     position: absolute;
     top: 0;

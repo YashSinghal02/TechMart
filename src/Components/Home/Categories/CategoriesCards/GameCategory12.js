@@ -4,6 +4,7 @@
    import sony2 from "../../../../assets/psgame.png";
   export let GameCategory12 = [
     {
+      id:27,
       name: "Sony PlayStation®5 Digital Edition",
       price: 42990,
       cutprice:"  ₹49,990",
@@ -12,6 +13,7 @@
       pictureLink:sony2,
     },
        {
+        id:28,
          name: "Nintendo Switch 2",
       price: 53440,
       cutprice:"   ₹79,990",
@@ -20,6 +22,7 @@
       pictureLink:nikon,
     },
        {
+        id:29,
     name: "Sony DualSense Wireless ",
       price:  5549,
       cutprice:"   ₹6,390",
@@ -29,7 +32,8 @@
     },
 
       {
-         name: "Microsoft Xbox Series S",
+        id:30,
+         name: "Microsoft Xbox Series",
       price: 31980,
       cutprice:" ₹39,990",
       save:"₹6999",

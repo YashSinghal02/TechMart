@@ -13,9 +13,9 @@ function SalesCard1() {
     <div>
       <div className="px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
-          {Salescontent.map((x, index) => {
+          {Salescontent.map((x, id) => {
             return (
-              <div className="deal-card1" key={index}>
+              <div className="deal-card1" key={id}>
                 <div className="deal-card-img">
                   <div className="sale-badge">
                     <p>56% OFF</p>
@@ -43,7 +43,7 @@ function SalesCard1() {
                  
                     <button
                  onClick={()=>dispatch(addToCart({
-                   productid: x.id,
+                   productid: id,
                   name:x.name,
                   price:x.price,
                   img:x.pictureLink,

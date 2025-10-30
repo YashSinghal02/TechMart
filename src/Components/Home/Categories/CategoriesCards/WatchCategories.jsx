@@ -9,9 +9,9 @@ function WatchCategories() {
     <div>
       <div className="px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
-          {WatchCategories12.map((x, index) => {
+          {WatchCategories12.map((x, id) => {
             return (
-              <div className="deal-card1" key={index}>
+              <div className="deal-card1" key={id}>
                 <div className="deal-card-img">
                   <div className="sale-badge">
                     <p>{x.off} OFF</p>
@@ -38,7 +38,7 @@ function WatchCategories() {
                 <div className="Order-now">
                   <button
                    onClick={()=>dispatch(addToCart({
-                   productid: x.id,
+                   productid:x.id,
                   name:x.name,
                   price:x.price,
                   img:x.pictureLink,

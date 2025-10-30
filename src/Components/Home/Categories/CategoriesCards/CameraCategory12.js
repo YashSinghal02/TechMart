@@ -3,7 +3,7 @@
   import sony1 from "../../../../assets/sony1.png";
    import sony2 from "../../../../assets/sony2.png";
   export let CameraCategor = [
-    {
+    {id:23,
       name: "Sony Alpha ILCE-7M3K ",
       price: 133290,
       cutprice:"₹1,61,490",
@@ -12,6 +12,7 @@
       pictureLink:sony1,
     },
        {
+        id:24,
          name: "Nikon Digital Camera",
       price: 102899,
       cutprice:" ₹1,15,795",
@@ -20,6 +21,7 @@
       pictureLink:nikon,
     },
        {
+        id:25,
          name: "Canon EOS R7 32.5MP",
       price: 164990,
       cutprice:"₹1,75,995",
@@ -29,6 +31,7 @@
     },
 
       {
+        id:26,
          name: "Sony Alpha ILCE-7RM5 ",
       price:282990,
       cutprice:"₹3,53,990",

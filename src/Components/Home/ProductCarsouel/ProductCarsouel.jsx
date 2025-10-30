@@ -143,7 +143,7 @@ const BrandCarousel = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % totalPages);
-    }, 4000);
+    }, 3000);
     return () => clearInterval(timer);
   }, [totalPages]);
 
