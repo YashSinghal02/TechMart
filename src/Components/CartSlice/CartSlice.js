@@ -31,8 +31,8 @@ addToCart: (state, action) => {
 
        
        const idToRemove = action.payload.productid; // item id passed from the component
-       console.log("Action",action.payload)
-       console.log("idToRemove",idToRemove)
+      //  console.log("Action",action.payload)
+      //  console.log("idToRemove",idToRemove)
       state.items =state.items.filter((item) => item.productid !== idToRemove);
     },
 

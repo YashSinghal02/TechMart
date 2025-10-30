@@ -9,7 +9,7 @@ function NavBar() {
   // Reducx logic
   const items = useSelector((state) => 
     {return state.cart.items} )
-  console.log(items)
+  // console.log(items)
 
 
   // Reducx logic

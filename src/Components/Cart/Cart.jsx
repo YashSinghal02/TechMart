@@ -11,7 +11,7 @@ function Cart() {
 
   // Get items from Redux
   const items = useSelector((state) => state.cart.items);
-  console.log("Cart Items:", items);
+  // console.log("Cart Items:", items);
 
 
   // Calculate total price
@@ -61,7 +61,7 @@ const perPrice = items.reduce((acc, curr) => {
                       name:item.name,
                       price:item.price,
                       }))}
-              className="delcart1"><i class="fa-solid fa-xmark delcart"></i></span>
+              className="delcart1"><i className="fa-solid fa-xmark delcart"></i></span>
             </div>
             <span>₹{item.price}</span>
             <span className="removecart">
@@ -71,7 +71,7 @@ const perPrice = items.reduce((acc, curr) => {
                       name:item.name,
                       price:item.price,
                       }))}
-              class="fa-solid fa-plus"></i>
+              className="fa-solid fa-plus"></i>
               </div>
               <div className="quantitynumber">{item.quantity}</div>
               <div className="plus"><i 
@@ -80,7 +80,7 @@ const perPrice = items.reduce((acc, curr) => {
                       name:item.name,
                       price:item.price,
                       }))}
-              class="fa-solid fa-minus"></i>
+              className="fa-solid fa-minus"></i>
               </div>
             </span>
             <span>₹{item.price * item.quantity}</span>
