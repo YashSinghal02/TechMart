@@ -16,7 +16,7 @@ function About() {
     const timer = setTimeout(() => {
       setLoading(false);
       
-    }, 1200); // 2 seconds delay
+    }, 1000); // 2 seconds delay
     return () => clearTimeout(timer);
   }, []);
 
@@ -39,7 +39,7 @@ function About() {
           wrapperStyle={{}}
           wrapperClass=""
         />
-        <h2>loading...</h2>
+        <h2  className='text-black'>loading...</h2>
       </div>
     );
   }

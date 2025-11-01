@@ -39,7 +39,7 @@ function Home() {
           wrapperStyle={{}}
           wrapperClass=""
         />
-        <h2>loading...</h2>
+        <h2  className='text-black'>loading...</h2>
       </div>
     );
   }
