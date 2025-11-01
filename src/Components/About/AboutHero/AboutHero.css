@@ -1,4 +1,4 @@
-.abouthero-bg{
+/* .abouthero-bg{
     background-image: url("../../../assets/abouthero.jpg");
     background-size: cover;
     width: 100%;
@@ -6,4 +6,23 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment:fixed ;
+} */
+
+/* Mobile */
+.abouthero-bg-mobile {
+  width: 100%;
+  height: 450px; 
+  background-image: url("../../../assets/abouthero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+@media (max-width: 768px) {
+  .abouthero-bg-mobile {
+    height: 280px; 
+    background-attachment: scroll;
+  }
 }

@@ -116,7 +116,7 @@
   height: 160px; */
   padding: 0 24px;
   object-fit: contain;
-  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.25));
+  /* filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.25)); */
 }
 
 /* Dots Container */

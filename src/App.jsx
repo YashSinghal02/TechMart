@@ -7,17 +7,18 @@ import Home from "./Components/Home/Home"
 
 import NavBar from "./Components/NavBar/NavBar"
 import { BrowserRouter, Routes, Route } from 'react-router'
+import ScrollToTop from "./ScrollToTop"
+
+
 
 function App() {
 
   return (
     <div>
       <BrowserRouter>
-      
+      <ScrollToTop/>
         <NavBar />
-        {/* <Cart/> */}
-        {/* <FormSign/> */}
-        {/* <About/> */}
+
         
         <Routes>
          

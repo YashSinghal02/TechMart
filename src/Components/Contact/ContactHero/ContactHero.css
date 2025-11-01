@@ -7,3 +7,18 @@
     background-repeat: no-repeat;
     background-attachment:fixed ;
 }
+
+
+@media (max-width: 850px) {
+  .abouthero-bg2{
+    height: 320px; 
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 450px) {
+  .abouthero-bg2{
+    height: 280px; 
+    background-attachment: scroll;
+  }
+}
