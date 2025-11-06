@@ -16,7 +16,7 @@ function About() {
     const timer = setTimeout(() => {
       setLoading(false);
       
-    }, 500); // 2 seconds delay
+    }, 700); // 2 seconds delay
     return () => clearTimeout(timer);
   }, []);
 
