@@ -10,7 +10,7 @@ function SpeakerCounter() {
   });
 
   useEffect(() => {
-   const futureDate = new Date("September 30, 2026, 12:00:00").getTime();
+   const futureDate = new Date("November 30, 2026, 12:00:00").getTime();
 
     function countDown() {
        const currentDate = new Date().getTime();
